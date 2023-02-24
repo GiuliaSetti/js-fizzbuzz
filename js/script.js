@@ -49,7 +49,11 @@ for (let i = 1; i <= 100; i++){
         console.log(i + " divisibili per 3 e 5");
 
         newEl.innerHTML = "FizzBuzz";
+
+        // aggiunta classe
         
+        newEl.classList.add("fizzbuzz");
+
     } else if (i % 3 == 0){
 
         // divisibile per 3 - FIZZ
@@ -57,6 +61,10 @@ for (let i = 1; i <= 100; i++){
         console.log(i + " divisibili per 3");
 
         newEl.innerHTML = "Fizz";
+
+        // aggiunta classe
+
+        newEl.classList.add("fizz");
 
     } else if (i % 5 == 0){
         
@@ -67,6 +75,10 @@ for (let i = 1; i <= 100; i++){
         
         newEl.innerHTML = "Buzz";
 
+        // aggiunta classe
+
+        newEl.classList.add("buzz");
+
     } else {
 
         // il resto dei numeri
@@ -74,6 +86,10 @@ for (let i = 1; i <= 100; i++){
         console.log(i);
 
         newEl.innerHTML = i;
+
+        // aggiunta classe
+
+        newEl.classList.add("standard");
 
     }
 
