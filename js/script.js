@@ -25,3 +25,57 @@
 
 */
 
+
+
+let containerEl = document.getElementById("container")
+
+for (let i = 1; i <= 100; i++){
+
+    // creo elemento tag div
+
+    let newEl = document.createElement("div");
+
+    // div figlio di div container
+
+    containerEl.append(newEl);
+
+
+    // inizio if
+
+    if (i % 3 == 0 && i % 5 == 0){
+
+        // se divisibile per 3 e 5 - FIZZBUZZ
+
+        console.log(i + " divisibili per 3 e 5");
+
+        newEl.innerHTML = "FizzBuzz";
+        
+    } else if (i % 3 == 0){
+
+        // divisibile per 3 - FIZZ
+
+        console.log(i + " divisibili per 3");
+
+        newEl.innerHTML = "Fizz";
+
+    } else if (i % 5 == 0){
+        
+        
+        // divisibile per 5 - BUZZ
+        
+        console.log(i + " divisibili per 5");
+        
+        newEl.innerHTML = "Buzz";
+
+    } else {
+
+        // il resto dei numeri
+
+        console.log(i);
+
+        newEl.innerHTML = i;
+
+    }
+
+}
+
